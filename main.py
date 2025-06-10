@@ -11,7 +11,7 @@
 hint: что такое print?
 """
 
-# Замените это своим кодом
+# print("Hello world")
 
 """
  _____         _      _____ 
@@ -27,7 +27,17 @@ hint: что такое print?
 hint: цикл, если и "%"
 """
 
-# Замените это своим кодом
+# n = int(input("Введите число: "))
+# for i in range(1, n + 1):
+#     if i % 3 == 0 and i % 5 == 0:
+#         print("FizzBuzz")
+#     elif i % 3 == 0:
+#         print("Fizz")
+#     elif i % 5 == 0:
+#         print("Buzz")
+#     else:
+#         print(i)
+
 
 """
  _____         _      _____ 
@@ -42,7 +52,12 @@ hint: цикл, если и "%"
 hint: https://ru.wikihow.com/%D0%B2%D1%8B%D1%81%D1%87%D0%B8%D1%82%D1%8B%D0%B2%D0%B0%D1%82%D1%8C-%D0%B2%D0%B8%D1%81%D0%BE%D0%BA%D0%BE%D1%81%D0%BD%D1%8B%D0%B5-%D0%B3%D0%BE%D0%B4%D1%8B
 """
 
-# Замените это своим кодом
+# year = int(input("Введите год: "))
+# if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+#     print(f"{year} — високосный год.")
+# else:
+#     print(f"{year} — не является високосным годом.")
+
 
 """
  _____         _        ___ 
@@ -72,7 +87,18 @@ hint: https://letpy.com/handbook/builtins/reversed/
 hint: https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B0%D0%BB
 """
 
-# Замените это своим кодом
+# def factorial_iterative(n):
+#     result = 1
+#     for i in range(2, n + 1):
+#         result *= i
+#     return result
+
+# num = int(input("Введите число: "))
+# if num < 0:
+#     print("Факториал не определён для отрицательных чисел.")
+# else:
+#     print(f"Факториал числа {num} равен {factorial_iterative(num)}")
+
 
 """
  _____         _       ____ 
@@ -88,7 +114,19 @@ hint: x <= 1 - не простые числа
 hint 2: %
 """
 
-# Замените это своим кодом
+# def is_prime(x):
+#     if x <= 1:
+#         return False
+#     for i in range(2, x):
+#         if x % i == 0:
+#             return False
+#     return True
+# num = int(input("Введите число: "))
+# if is_prime(num):
+#     print(f"{num} является простым числом.")
+# else:
+#     print(f"{num} не является простым числом.")
+
 
 """
  _____         _      ______
@@ -103,7 +141,16 @@ hint 2: %
 hint: циклы
 """
 
-# Замените это своим кодом
+# def sum_digits(n):
+#     total = 0
+#     while n > 0:
+#         total += n % 10
+#         n //= 10
+#     return total
+# number = 12345
+# result = sum_digits(number)
+# print("Sum of digits:", result)  
+
 
 """
  _____         _      _____ 
@@ -119,7 +166,24 @@ hint: 1, 1, 2, 3 https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D
 hint 2: попробуйте решить с помощью рекурсии
 """
 
-# Замените это своим кодом
+# def fib_recursive(n):
+#     if n == 1 or n == 2:
+#         return 1
+#     return fib_recursive(n-1) + fib_recursive(n-2)
+
+# def fibonacci_sequence_max_recursive(max_value):
+#     seq = []
+#     i = 1
+#     while True:
+#         f = fib_recursive(i)
+#         if f > max_value:
+#             break
+#         seq.append(f)
+#         i += 1
+#     return seq
+# max_num = int(input("Введите максимальное число: "))
+# print(fibonacci_sequence_max_recursive(max_num))
+
 
 
 
